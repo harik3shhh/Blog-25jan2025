@@ -11,7 +11,7 @@ const cors = require("cors");
 const PORT = process.env.PORT;
 
 const corsOptions = {
-    origin: "https://blog-dist-file-mksk.vercel.app/",
+    origin: "*",
     methods: "GET, POST, PUT, DELETE, HEAD",
     credentials: true,
 };
