@@ -12,7 +12,7 @@ const Banner = () => {
   // Fetch existing banners
   const fetchBanners = async () => {
     try {
-      const { data } = await axios.get(`${import.meta.env.VITE_BASE_URL}/api/v1/blog/get-banner`);
+      const { data } = await axios.get(`https://blog-server-green.vercel.app/api/v1/blog/get-banner`);
       if (data?.success) {
         setBanners(data?.banner);
       }
